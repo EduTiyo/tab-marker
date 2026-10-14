@@ -75,18 +75,3 @@ tab-marker/
 ├── .gitignore
 └── README.md
 ```
-
----
-
-## 📦 Como Empacotar para Instalação Permanente (.zip / .xpi)
-
-Para gerar o arquivo compactado para distribuição ou envio ao [Firefox Add-ons (AMO)](https://addons.mozilla.org/):
-
-No terminal, dentro da pasta `tab-marker`:
-```bash
-zip -r -FS tab-marker.zip manifest.json background.js content.js icons popup
-```
-Ou com a ferramenta oficial da Mozilla (`web-ext`):
-```bash
-npx web-ext build
-```
