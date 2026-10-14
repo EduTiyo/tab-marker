@@ -48,7 +48,7 @@ Para testar e utilizar a extensão localmente no Firefox:
 3. Clique no botão **"Carregar extensão temporária..."** (*Load Temporary Add-on...*).
 4. Navegue até a pasta deste projeto:
    ```text
-   /Users/eduardotiyo/Documents/tab-marker
+   /Caminho/para/pasta/tab-marker
    ```
 5. Selecione o arquivo `manifest.json`.
 6. Pronto! A extensão será carregada imediatamente. O menu de contexto de clique direito nas abas e o ícone na barra de ferramentas já estarão ativos.
