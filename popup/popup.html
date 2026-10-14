@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Marker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-title">
+        <span class="logo-dot"></span>
+        <h1>Tab Marker</h1>
+      </div>
+      <div id="currentTabStatus" class="tab-status" title="Status da aba atual">
+        <span id="statusIndicator" class="status-indicator"></span>
+        <span id="statusText" class="status-text">Sem cor</span>
+      </div>
+    </header>
+
+    <!-- Preset Colors Grid -->
+    <section class="section">
+      <label class="section-label">Cores Rápidas</label>
+      <div id="presetGrid" class="color-grid">
+        <!-- Preenchido via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Custom Color Picker -->
+    <section class="section">
+      <label class="section-label">Cor Personalizada</label>
+      <div class="custom-color-row">
+        <div class="color-input-wrapper">
+          <input type="color" id="customColorInput" value="#6366f1" aria-label="Seletor de cor">
+          <span id="customColorPreview" class="color-input-preview"></span>
+        </div>
+        <input type="text" id="hexInput" class="hex-input" value="#6366F1" maxlength="7" spellcheck="false" placeholder="#HEX">
+        <button id="applyCustomBtn" class="btn btn-primary" type="button">Aplicar</button>
+      </div>
+    </section>
+
+    <!-- Footer Actions -->
+    <footer class="footer">
+      <button id="removeMarkerBtn" class="btn btn-danger" type="button" disabled>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        Remover Marcação
+      </button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
